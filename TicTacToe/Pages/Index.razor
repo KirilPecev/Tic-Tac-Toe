@@ -1,9 +1,17 @@
 ﻿@page "/"
+@inject IJSRuntime JS
 
-<PageTitle>Index</PageTitle>
+<div>
+    <h1>Tic Tac Toe</h1>
+    <div class="board">
+        @for (int i = 0; i < board.Length; i++)
+        {
+            int index = i;
+            <div class="square"
+                 @onclick="() => SquareClicked(i)">
+                 <h5 class="char"> @board[i] </h5>
+            </div>
+        }
+    </div>
+</div>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
