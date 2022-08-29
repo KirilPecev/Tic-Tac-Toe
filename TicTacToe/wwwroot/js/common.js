@@ -1,6 +1,6 @@
 ﻿window.ShowSwal = (player) => {
     Swal.fire({
-        title: player + ' won!!',
+        title: player + ' won!',
         width: 350,
         padding: '3em',
         color: '#716add',

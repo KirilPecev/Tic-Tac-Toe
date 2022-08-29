@@ -6,9 +6,9 @@
     <div class="board">
         @for (int i = 0; i < board.Length; i++)
         {
-            int index = i;
+            int j = i;
             <div class="square"
-                 @onclick="() => SquareClicked(i)">
+                 @onclick="() => SquareClicked(j)">
                  <h5 class="char"> @board[i] </h5>
             </div>
         }

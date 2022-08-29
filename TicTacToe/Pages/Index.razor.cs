@@ -4,8 +4,11 @@ namespace TicTacToe.Pages
 
     public partial class Index
     {
+        private const string PlayerOneChar = "X";
+        private const string PlayerTwoChar = "O";
+
         private readonly string[] board = { "", "", "", "", "", "", "", "", "" };
-        private string player = "X";
+        private string player = PlayerOneChar;
         private readonly int[][] winningCombos =
         {
             new int[3] {0,1,2},
@@ -20,26 +23,29 @@ namespace TicTacToe.Pages
 
         private async Task SquareClicked(int i)
         {
-            this.board[i] = player;
-            this.player = this.player == "X" ? "O" : "X";
+            if (this.board[i] == String.Empty)
+            {
+                this.board[i] = this.player;
+                this.player = this.player == PlayerOneChar ? PlayerTwoChar : PlayerOneChar;
+            }
 
-            foreach (int[] combo in winningCombos)
+            foreach (int[] combo in this.winningCombos)
             {
                 int p1 = combo[0];
                 int p2 = combo[1];
                 int p3 = combo[2];
 
-                if (board[p1] == String.Empty || board[p2] == String.Empty || board[p3] == String.Empty) continue;
+                if (this.board[p1] == String.Empty || this.board[p2] == String.Empty || this.board[p3] == String.Empty) continue;
 
-                if (board[p1] == board[p2] && board[p2] == board[p3] && board[p1] == board[p3])
+                if (this.board[p1] == this.board[p2] && this.board[p2] == this.board[p3] && this.board[p1] == this.board[p3])
                 {
-                    string winner = player == "X" ? "Player TWO" : "Player ONE";
+                    string winner = this.player == PlayerOneChar ? "Player TWO" : "Player ONE";
                     await JS.InvokeVoidAsync("ShowSwal", winner);
                     this.ResetGame();
                 }
             }
 
-            if (board.All(x => x != ""))
+            if (this.board.All(x => x != String.Empty))
             {
                 await JS.InvokeVoidAsync("ShowTie");
                 this.ResetGame();
@@ -48,9 +54,9 @@ namespace TicTacToe.Pages
 
         private void ResetGame()
         {
-            for (int i = 0; i < board.Length; i++)
+            for (int i = 0; i < this.board.Length; i++)
             {
-                board[i] = "";
+                this.board[i] = String.Empty;
             }
         }
     }
