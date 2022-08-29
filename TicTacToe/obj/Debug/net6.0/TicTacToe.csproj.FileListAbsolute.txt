@@ -804,6 +804,7 @@ C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\build-gz\KlmhhXiS.gz
 C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\blazor.boot.json
 C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\staticwebassets.build.json
 C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\staticwebassets.development.json
+C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css
 C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\C#\Tic-Tac-Toe\TicTacToe\obj\Debug\net6.0\scopedcss\bundle\TicTacToe.styles.css

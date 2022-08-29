@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+rTtVQgNbygt+THFoChyIyVVKDVkUXyTgIttNKioWoI=",
+  "Hash": "X/eoQIcKLkySY5tcjPeqBdWzYnUSG/PSL9XihmWBBBQ=",
   "Source": "TicTacToe",
   "BasePath": "/",
   "Mode": "Root",
@@ -7089,12 +7089,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\C#\\Tic-Tac-Toe\\TicTacToe\\wwwroot\\sample-data\\weather.json",
+      "Identity": "C:\\C#\\Tic-Tac-Toe\\TicTacToe\\wwwroot\\js\\common.js",
       "SourceId": "TicTacToe",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\C#\\Tic-Tac-Toe\\TicTacToe\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
+      "RelativePath": "js/common.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7103,7 +7103,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
+      "OriginalItemSpec": "wwwroot\\js\\common.js"
     }
   ]
 }
